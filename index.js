@@ -12,3 +12,10 @@ function reverseString(str) {
 }
 console.log(reverseString
     ("Rakibul Islam"));
+
+/* 3rd problem */
+function  removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
+console.log( removeDuplicates(
+    [11, 5, 56, 90, 44, 46, 56,11,45]));
