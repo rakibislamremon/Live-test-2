@@ -41,3 +41,12 @@ function findLargestNumber(arr) {
   // Example usage
   console.log(findLargestNumber([3, 7, 2, 9, 5])); // Output: 9
   
+
+/* 6th problem */
+function findSmallestNumber(arr) {
+    return Math.min(...arr);
+  }
+  
+  // Example usage
+  console.log(findSmallestNumber([3, 7, 2, 9, 5])); // Output: 2
+  
