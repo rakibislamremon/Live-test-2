@@ -20,7 +20,7 @@ function  removeDuplicates(arr) {
     return [...new Set(arr)];
 }
 console.log( removeDuplicates(
-    [11, 5, 56, 90, 44, 46, 56,11,45]));
+    [11, 5, 56, 90, 44, 46, 56,11,3,45]));
 
 
 
@@ -31,3 +31,13 @@ function countVowels(str){
     return Vowel;}
 console.log(countVowels
     ("The quick brown fox jumps over the lazy dog"));
+
+
+/* 5th problem */
+function findLargestNumber(arr) {
+    return Math.max(...arr);
+  }
+  
+  // Example usage
+  console.log(findLargestNumber([3, 7, 2, 9, 5])); // Output: 9
+  
