@@ -49,4 +49,23 @@ function findSmallestNumber(arr) {
   
   // Example usage
   console.log(findSmallestNumber([3, 7, 2, 9, 5])); // Output: 2
+
+  
+//7th problem
+function lessThanMedianSum(arr) {
+
+    const sortedArr = [...arr].sort((a, b) => a - b);
+  
+    const mid = Math.floor(sortedArr.length / 2);
+    let median;
+    if (sortedArr.length % 2 === 0) {
+      median = (sortedArr[mid - 1] + sortedArr[mid]) / 2;
+    } else {
+      median = sortedArr[mid];
+    }
+    const sum = arr.reduce((acc, num) => (num < median ? acc + num : acc), 0);
+    return sum;
+
+}
+console.log(lessThanMedianSum([3, 1, 7, 9, 5]));
   
