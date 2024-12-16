@@ -79,9 +79,22 @@ function isLeapYear(year) {
       return false;
     }
   }
-  
-  console.log(isLeapYear(2024)); 
-  console.log(isLeapYear(1900));
-  console.log(isLeapYear(2000));
-  console.log(isLeapYear(2023));
+console.log(isLeapYear(2024)); 
+console.log(isLeapYear(1900));
+console.log(isLeapYear(2000));
+console.log(isLeapYear(2023));
+
+
+/*9th problem */
+function findLargestNumber(arr) {
+    let largest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > largest) {
+        largest = arr[i];
+      }
+    }
+    return largest;
+  }
+console.log(findLargestNumber([3, 7, 2, 9, 5]));
+console.log(findLargestNumber([-10, -3, -20, -5]));
   
