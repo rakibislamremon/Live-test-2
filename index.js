@@ -97,4 +97,15 @@ function findLargestNumber(arr) {
   }
 console.log(findLargestNumber([3, 7, 2, 9, 5]));
 console.log(findLargestNumber([-10, -3, -20, -5]));
-  
+
+
+/*10 th problem */
+function findSpecificName(arr, name) {
+  return arr.includes(name) ? name : "Name not found";
+}
+
+const names = ["John", "Alice", "Bob", "Mary"];
+
+console.log(findSpecificName(names, "Alice")); 
+console.log(findSpecificName(names, "David"));
+
